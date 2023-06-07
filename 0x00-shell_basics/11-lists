@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -lad "$(pwd)" "$(dirname "$(pwd)")" /boot
+echo -e ".:\n$(ls -lA "$(pwd)")\n..:\n$(ls -lA "$(dirname "$(pwd)")")\n/boot:\n$(ls -lA /boot)"
+
